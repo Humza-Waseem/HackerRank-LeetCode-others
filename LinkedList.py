@@ -37,27 +37,32 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+def PrintLinkedList(head):     # here the head can be any element from which we are starting the iteration
+    current = head
+    while current != None :   # checks if the current is not none. 
+                                 #    A   -->   B -->             C          -->          D       ----->> null
+                                #   current    current.next   current.next+1       current.next+2 
+        
+        print (current.data)        
+        current=current.next
+    
+   
+        
 
-
+#####  DRIVER CODE
 a = Node('H')
 b = Node('A')
 c = Node('M')
 d = Node('Z')
 e = Node('A')
 
+a.data = input("Give the Value for 'a' Node : ")
+print("\n")
 
 a.next = b
 b.next = c
 c.next = d
 d.next = e
-
-def PrintLinkedList(head):     # here the head can be any element from which we are starting the iteration
-    current = head
-    while current != None :
-
-        print (current.data)
-        current=current.next
-        
 
 PrintLinkedList(a)
 
