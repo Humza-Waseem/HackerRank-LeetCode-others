@@ -20,4 +20,5 @@ def power_of_two(n):
 
     return power_of_two(n // 2)
 
-
+arr = [1,5,2,5,7,2]
+print(power_of_two(arr))
