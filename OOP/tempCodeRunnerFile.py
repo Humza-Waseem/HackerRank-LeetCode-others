@@ -21,9 +21,11 @@ def maximumOddBinaryNumber(binary_string):
         
          
 if __name__ == "__main__":
-    binary_string = str("010")  
+    binary_string = str("011101")  
     answer = maximumOddBinaryNumber(binary_string)
     print(answer)
+
+
 
 
 
