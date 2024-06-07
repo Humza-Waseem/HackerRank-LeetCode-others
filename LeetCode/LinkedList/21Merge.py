@@ -1,41 +1,73 @@
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.next = None
-    
-class LinkedList:
-    def __init(self):
-        self.root = None
+# class Node:
+#     def __init__(self, val):
+#         self.val = val
+#         self.next = None
 
-    def Insert(self,val):
-        newNode = Node(val)
-        if(self.root == None):
-            self.root = newNode
-            print("value Inserting at Root")
+# class LinkedList:
+#     def __init__(self):
+#         self.root = None
 
-        else:
-            current= self.root
-            while(current.next != None):
-                current = current.next
+#     def PrintList(self):
+#         current = self.root
+#         while current is not None:
+#             print(current.val)
+#             current = current.next
 
-            current.next = newNode
-            print("value Inserted")
+#     def Insert(self, val):
+#         newNode = Node(val)
+#         if self.root is None:
+#             self.root = newNode
+#             print("value Inserting at Root")
+#         else:
+#             current = self.root
+#             while current.next is not None:
+#                 current = current.next
+#             current.next = newNode
+#             print("value Inserted")
 
-    def Search(self, data):
-        current.val = self.root.val
-        while(current.val != data):
-            current.next.val
+#     def Search(self, data):
+#       current = self.root
+#       while current is not None:
+#           if current.val == data:
+#               return current
+#           current = current.next
+#       return None
 
-        return current.val
-
-
-LL = LinkedList()
-LL.Insert(4)
-LL.Insert(3)
-LL.Insert(9)
-LL.Search(2)
-
-
+#     def mergeList(self):
 
 
 
+# list1= LinkedList()
+# list2= LinkedList()
+# list1.Insert(1)
+# list1.Insert(2)
+# list1.Insert(4)
+# list2.Insert(1)
+# list2.Insert(3)
+# list2.Insert(4)
+
+# # list1.PrintList()
+# # list2.PrintList()
+
+
+# print(mergeLists())
+
+
+
+
+
+
+def  sqquare(x):
+    if x == 0:
+        return 0
+    count = 0
+    for  i in range(1,x):
+        i = i * i 
+        if( i <= x):
+         count = count +1
+    return count
+
+
+
+x = 16
+print(sqquare(x))
